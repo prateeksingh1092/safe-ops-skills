@@ -1,0 +1,32 @@
+{
+  "name": "safe-ops-skills",
+  "owner": {
+    "name": "Prateek Singh",
+    "github": "prateeksingh1092"
+  },
+  "metadata": {
+    "description": "11 skills for safe irreversible operations — staged delete, reversible disable, blast-radius ordering, atomic config edits, fresh-probe verification, and more. Distilled from a real 399GB production teardown.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "safe-ops-skills",
+      "description": "Skills for safely performing irreversible operations: staged delete with graveyard protocol, reversible disable primitive, blast-radius ordering, atomic config edits, fresh-probe verification, classify-before-delete, confidence gates, external recovery anchors, harness boundary awareness, executable caller checks, and Claude stock audit.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/reversible-disable-primitive",
+        "./skills/staged-delete-safety",
+        "./skills/atomic-config-edits",
+        "./skills/fresh-probe-verification",
+        "./skills/classify-before-delete",
+        "./skills/blast-radius-ordering",
+        "./skills/confidence-gate-before-deletion",
+        "./skills/external-recovery-anchor",
+        "./skills/harness-boundary-awareness",
+        "./skills/executable-caller-check",
+        "./skills/claude-stock-audit"
+      ]
+    }
+  ]
+}
